@@ -52,4 +52,6 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/lib64/libtensorflowlite_gpu_jni.so \
     system/lib64/libtensorflowlite_jni.so \
     system/priv-app/OmniStyle/OmniStyle.apk \
-    system/priv-app/TagGoogle/TagGoogle.apk
+    system/priv-app/TagGoogle/TagGoogle.apk \
+    system/etc/permissions/privapp-permissions-google.xml \
+    system/media/bootanimation.zip
