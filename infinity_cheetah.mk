@@ -42,3 +42,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=$(DEVICE_CODENAME)
 
 $(call inherit-product, $(VENDOR_PATH)/$(DEVICE_CODENAME)-vendor.mk)
+
+# Allow Infinity X / GApps files in /system despite generic_system.mk's path requirements
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/apex/com.google.android.extservices.apex \
+    system/app/GoogleExtShared/GoogleExtShared.apk \
+    system/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk \
+    system/lib/libtensorflowlite_jni.so \
+    system/lib64/libtensorflowlite_gpu_jni.so \
+    system/lib64/libtensorflowlite_jni.so \
+    system/priv-app/OmniStyle/OmniStyle.apk \
+    system/priv-app/TagGoogle/TagGoogle.apk
