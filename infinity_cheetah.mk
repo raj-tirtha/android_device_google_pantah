@@ -5,7 +5,7 @@
 #
 
 # Infinity X flags (set before inheriting the common config)
-INFINITY_MAINTAINER := "Rahul"
+INFINITY_MAINTAINER := "raj-tirtha"
 TARGET_HAS_UDFPS := true
 WITH_GAPPS := true
 
