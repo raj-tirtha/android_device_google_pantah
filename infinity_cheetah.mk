@@ -9,6 +9,10 @@ INFINITY_MAINTAINER := "Rahul"
 TARGET_HAS_UDFPS := true
 WITH_GAPPS := true
 
+# LineageOS base version, used by the kernel source sync
+PRODUCT_VERSION_MAJOR := 24
+PRODUCT_VERSION_MINOR := 0
+
 # Inherit some common Infinity X stuff
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
