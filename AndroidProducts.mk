@@ -6,4 +6,5 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_cheetah.mk \
     $(LOCAL_DIR)/aosp_panther.mk \
+    $(LOCAL_DIR)/aospa_cheetah.mk \
     $(LOCAL_DIR)/infinity_cheetah.mk
