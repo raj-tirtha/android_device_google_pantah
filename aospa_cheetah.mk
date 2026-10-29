@@ -32,6 +32,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=google/cheetah/cheetah:17/CP2A.260705.006/15641320:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
 
+# Penguin OS installs extras in /system; skip the GSI artifact path check
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
+
+# Broadcom Wi-Fi config still uses the Android.mk wpa_supplicant.conf
+FORCE_USE_ANDROIDMK_FOR_WPA_CONF := true
+
+TARGET_PREBUILT_KERNEL := device/google/pantah-kernels/6.12/Image.lz4
 # Boot animation resolution
 TARGET_BOOT_ANIMATION_RES := 1440
 

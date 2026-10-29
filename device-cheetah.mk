@@ -6,7 +6,7 @@
 #
 
 # Kernel
-TARGET_LINUX_KERNEL_VERSION := 6.1
+TARGET_LINUX_KERNEL_VERSION := 6.12
 TARGET_KERNEL_DEVICE := pantah
 TARGET_KERNEL_DIR := device/google/$(TARGET_KERNEL_DEVICE)-kernels/$(TARGET_LINUX_KERNEL_VERSION)
 TARGET_KERNEL_PLATFORM_SOURCE := google/gs-$(TARGET_LINUX_KERNEL_VERSION)
@@ -40,7 +40,7 @@ PRODUCT_PACKAGES += \
     ApertureOverlayCheetah
 
 # PowerShare
-include hardware/google/pixel/powershare/device.mk
+# include hardware/google/pixel/powershare/device.mk
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/$(DEVICE_CODENAME)/product.prop
