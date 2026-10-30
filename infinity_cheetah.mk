@@ -36,9 +36,9 @@ TARGET_SCREEN_HEIGHT := 3120
 TARGET_SCREEN_WIDTH := 1440
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="cheetah-user 17 CP2A.260705.006 15641320 release-keys" \
-    BuildFingerprint=google/cheetah/cheetah:17/CP2A.260705.006/15641320:user/release-keys \
-    BuildSystemFingerprint=google/generic_system_google/generic:17/CP2A.260705.006/15641320:user/release-keys \
+    BuildDesc="cheetah-user 17 CP3A.261005.002.A1 16269273 release-keys" \
+    BuildFingerprint=google/cheetah/cheetah:17/CP3A.261005.002.A1/16269273:user/release-keys \
+    BuildSystemFingerprint=google/generic_system_google/generic:17/CP3A.261005.002.A1/16269273:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
 
 $(call inherit-product, $(VENDOR_PATH)/$(DEVICE_CODENAME)-vendor.mk)
