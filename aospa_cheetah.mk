@@ -31,8 +31,8 @@ PRODUCT_NAME := aospa_$(DEVICE_CODENAME)
 PRODUCT_GMS_CLIENTID_BASE := android-google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="cheetah-user 17 CP2A.260705.006 15641320 release-keys" \
-    BuildFingerprint=google/cheetah/cheetah:17/CP2A.260705.006/15641320:user/release-keys \
+    BuildDesc="cheetah-user 17 CP3A.261005.002.A1 16269273 release-keys" \
+    BuildFingerprint=google/cheetah/cheetah:17/CP3A.261005.002.A1/16269273:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
 
 # Penguin OS installs extras in /system; skip the GSI artifact path check
