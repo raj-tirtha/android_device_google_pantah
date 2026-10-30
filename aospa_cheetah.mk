@@ -12,6 +12,9 @@ DEVICE_PATH := device/google/pantah
 VENDOR_PATH := vendor/google/cheetah
 $(call inherit-product, $(DEVICE_PATH)/aosp_$(DEVICE_CODENAME).mk)
 
+# Enable Penguin OS blur (sets ro.custom.blur.enable)
+TARGET_USES_BLUR := true
+
 # Inherit Penguin OS (AOSPA) configuration
 $(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
 
