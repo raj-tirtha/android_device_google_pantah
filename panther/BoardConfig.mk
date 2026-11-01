@@ -16,3 +16,9 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
 include $(DEVICE_PATH)/BoardConfigCommon.mk
 
 include $(VENDOR_PATH)/BoardConfigVendor.mk
+
+# Penguin OS (AOSPA) lacks LineageOS's add-radio-file-sha1-checked helper,
+# used by the vendor Android.mk to bundle firmware images. Map it to AOSP's.
+define add-radio-file-sha1-checked
+$(call add-radio-file,$(1))
+endef
